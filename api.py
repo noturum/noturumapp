@@ -20,7 +20,7 @@ def post_something():
     print(param) 
   
     if param: 
-        return jsonify({ "Message": f"Welcome {name} to our awesome platform!!", request "METHOD" : "POST" })
+        return jsonify({ "Message": f"Welcome {name} to our awesome platform!!", "METHOD" : "POST" })
     else: 
         return jsonify({ "ERROR": "no name found, please send a name." }) 
 @app.route('/') 
